@@ -347,9 +347,9 @@ def final_decision(
 
     final_score = round(min(base_score + escalation_bonus, 100), 2)
 
-    if final_score < 30:
+    if final_score < 9:
         risk_level = "Low"
-    elif final_score < 70:
+    elif final_score < 50:
         risk_level = "Medium"
     else:
         risk_level = "High"
